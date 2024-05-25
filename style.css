@@ -1,0 +1,226 @@
+body {
+    background: #e4ffd1;
+}
+
+.box {
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 8%;
+    width: 600px;
+    height: 600px;
+    background: none;
+}
+
+.butt {
+    position: absolute;
+    background: radial-gradient(#c9c9c9, #c9c9c9, #aaaaaa);
+    width: 50%;
+    height: 70%;
+    left: 35%;
+    top: 25%;
+    border-radius: 130px;
+    z-index: 4;
+    animation: rotate1 3s infinite;
+    transform-origin: 50% 80%;
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    25% {
+        transform: rotate(4deg)
+    }
+
+    50% {
+        transform: rotate(0deg)
+    }
+
+    75% {
+        transform: rotate(-4deg)
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+.tail {
+    position: absolute;
+    background: #aaaaaa;
+    width: 5%;
+    height: 20%;
+    left: 49%;
+    top: 15%;
+    z-index: 5;
+    animation: rotate2 3s infinite;
+    transform-origin: 50% 0%;
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(15deg)
+    }
+
+    25% {
+        transform: rotate(0deg)
+    }
+
+    50% {
+        transform: rotate(-15deg)
+    }
+
+    75% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(15deg)
+    }
+}
+
+.tail-tip {
+    position: absolute;
+    background: #aaaaaa;
+    width: 11%;
+    height: 10%;
+    left: 46%;
+    top: 30%;
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(40% 0%, 60% 0%, 100% 100%, 0% 100%);
+    z-index: 5;
+    animation: rotate3 3s infinite;
+    transform-origin: 50% 0%;
+}
+
+@keyframes rotate3 {
+    0% {
+        transform: rotate(15deg) translate3d(-16px, 0px, 0px)
+    }
+
+    25% {
+        transform: rotate(0deg) translate3d(0px, 0px, 0px)
+    }
+
+    50% {
+        transform: rotate(-15deg) translate3d(16px, 0px, 0px)
+    }
+
+    75% {
+        transform: rotate(0deg) translate3d(0px, 0px, 0px)
+    }
+
+    100% {
+        transform: rotate(15deg) translate3d(-16px, 0px, 0px)
+    }
+}
+
+.between-leg {
+    position: absolute;
+    background: #e4ffd1;
+    width: 20%;
+    height: 100%;
+    left: 41%;
+    top: 60%;
+    z-index: 6;
+}
+
+.ground {
+    position: absolute;
+    background: #e4ffd1;
+    width: 100%;
+    height: 20%;
+    left: 0%;
+    top: 75%;
+    z-index: 6;
+}
+
+.ear {
+    position: absolute;
+    background: #aaaaaa;
+    width: 22%;
+    height: 20%;
+    left: 40%;
+    top: 15%;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.head {
+    position: absolute;
+    background: #c9c9c9;
+    width: 40%;
+    height: 35%;
+    left: 20%;
+    top: 14%;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.eye {
+    position: absolute;
+    background: #000000;
+    width: 5%;
+    height: 5%;
+    left: 18%;
+    top: 40%;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.blush {
+    position: absolute;
+    background: #ffe5f6;
+    width: 10%;
+    height: 5%;
+    left: 16%;
+    top: 50%;
+    border-radius: 50px;
+    z-index: 3;
+}
+
+.tusk {
+    position: absolute;
+    background: #c9c9c9;
+    width: 25%;
+    height: 25%;
+    left: 5%;
+    top: 14%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.tusk-outline-circle {
+    position: absolute;
+    background: #e4ffd1;
+    width: 10%;
+    height: 10%;
+    left: 13%;
+    top: 21%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.tusk-outline-rectangle {
+    position: absolute;
+    background: #e4ffd1;
+    width: 50%;
+    height: 20%;
+    left: 0%;
+    top: 4%;
+    z-index: 1;
+}
+
+.ivory {
+    position: absolute;
+    background: white;
+    width: 6%;
+    height: 3%;
+    left: 17%;
+    top: 36%;
+    z-index: 2;
+    -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
